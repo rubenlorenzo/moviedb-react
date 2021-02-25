@@ -1,0 +1,9 @@
+@import './colors.scss';
+#App{
+  height: 100%;
+}
+
+#content{
+  background-color: $colorLight;
+  height: 850px;
+}
