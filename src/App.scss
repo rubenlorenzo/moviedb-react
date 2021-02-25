@@ -1,9 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
 @import './colors.scss';
+
 #App{
   height: 100%;
 }
 
 #content{
   background-color: $colorLight;
-  height: 850px;
+  height: calc(100vh - 123px);
 }

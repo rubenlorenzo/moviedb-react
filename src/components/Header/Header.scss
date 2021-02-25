@@ -1,10 +1,10 @@
 @import '../../colors.scss';
 
-#header{
+.navbar{
   background-color: $colorDarkest;
-  padding: 1.5em;
+  padding: 1em;
 
-  h1{
+  .navbar-brand{
     font-family: 'RocknRoll One';
     color: $colorFontEssential;    
   }
