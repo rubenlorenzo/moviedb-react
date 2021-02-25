@@ -1,0 +1,11 @@
+@import '../../colors.scss';
+
+#header{
+  background-color: $colorDarkest;
+  padding: 1.5em;
+
+  h1{
+    font-family: 'RocknRoll One';
+    color: $colorFontEssential;    
+  }
+}
