@@ -4,7 +4,7 @@ import { api_key } from "../../env.js";
 import ItemMovie from "./ItemMovie";
 import "./Movies.scss";
 
-function Movies() {
+function Movies(props) {
   const movieType = "popular";
   const [movies, setMovies] = useState([]);
 
@@ -15,6 +15,8 @@ function Movies() {
       .catch(console.error);
   }, [movieType]);
 
+  useEffect(()=> props.calculatePages(movies) ,[movies,props])
+  
   let moviesPagination = movies.slice(0, 12);
 
   return (

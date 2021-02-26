@@ -1,0 +1,12 @@
+@import "../../colors.scss";
+
+#content {
+  background-color: $colorLight;
+  height: calc(100vh - 184px);
+  overflow-y: scroll;
+}
+
+.pagination {
+  margin: 0.5em 0em 0.5em 0em;
+  justify-content: center;
+}
