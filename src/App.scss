@@ -1,11 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
-@import './colors.scss';
+@import "./colors.scss";
 
-#App{
+#App {
   height: 100%;
 }
 
-#content{
+#content {
   background-color: $colorLight;
   height: calc(100vh - 123px);
+  overflow-y: scroll;
 }
