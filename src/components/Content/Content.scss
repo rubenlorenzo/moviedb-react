@@ -14,8 +14,8 @@
   border-radius: 0em;
   justify-content: center;
 
-  .active {
-    .page-link {
+  .page-item.active {
+    > .page-link {
       background-color: $colorFontEssential;
       border-width: 0.13em;
       border-color: $colorFontEssential;
