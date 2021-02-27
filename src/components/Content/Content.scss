@@ -2,11 +2,31 @@
 
 #content {
   background-color: $colorLight;
-  height: calc(100vh - 184px);
+  height: calc(100vh - 176px);
   overflow-y: scroll;
+  padding: 1.5em 0em 0em 1.5em;
 }
 
 .pagination {
-  margin: 0.5em 0em 0.5em 0em;
+  background-color: $colorDarkest;
+  margin-bottom: 0em;
+  padding: 0.5em 0em 0.5em 0em;
+  border-radius: 0em;
   justify-content: center;
+
+  .active {
+    .page-link {
+      background-color: $colorFontEssential;
+      border-width: 0.13em;
+      border-color: $colorFontEssential;
+      font-weight: bold;
+    }
+  }
+  .page-link {
+    background-color: $colorLight;   
+    border-width: 0.13em;
+    border-color: $colorFontEssential;
+    color: $colorFontEssential;    
+    font-weight: bold;
+  }
 }
