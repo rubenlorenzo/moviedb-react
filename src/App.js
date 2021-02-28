@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from './components/Header';
-import Content from './components/Content';
+import Search from './components/Search';
 import Footer from './components/Footer';
 import './App.scss';
 
@@ -9,9 +9,11 @@ function App() {
     <div className="App">
       <Header />
       <BrowserRouter>
+      <div id="content">
         <Switch>
-          <Route path="/:type/:page" component={Content} />
+          <Route path="/:type/:page" component={Search} />
         </Switch>
+        </div>
       </BrowserRouter>      
       <Footer />
     </div>

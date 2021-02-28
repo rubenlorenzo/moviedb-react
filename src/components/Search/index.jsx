@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Pagination } from "react-bootstrap";
 import Movies from "../Movies";
-import "./Content.scss";
+import "./Search.scss";
 
 function Content(props) {
   const [numPages, setNumPages] = useState(0);
@@ -19,9 +19,7 @@ function Content(props) {
 
   return (
     <>
-      <div id="content">
-        <Movies calculatePages={calculatePages} type={type} page={page} />
-      </div>
+      <Movies calculatePages={calculatePages} type={type} page={page} />
       <Pagination>{pages}</Pagination>
     </>
   );

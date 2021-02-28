@@ -1,14 +1,9 @@
 @import "../../colors.scss";
 
-#content {
-  background-color: $colorLight;
-  height: calc(100vh - 176px);
-  overflow-y: scroll;
-  padding: 1.5em 0em 0em 1.5em;
-}
 
 .pagination {
   background-color: $colorDarkest;
+  margin-top: auto;
   margin-bottom: 0em;
   padding: 0.5em 0em 0.5em 0em;
   border-radius: 0em;

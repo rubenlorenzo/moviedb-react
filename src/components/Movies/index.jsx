@@ -5,10 +5,11 @@ import ItemMovie from "./ItemMovie";
 import "./Movies.scss";
 
 function Movies(props) {
-  const movieType = props.type;
-  const [movies, setMovies] = useState([]);
-  let initialItem = (props.page-1)*12;
-  let finalItem = props.page*12;
+  const movieType =  props.type;
+  const page = props.page;
+  const [movies, setMovies] = useState([]);  
+  let initialItem = (page-1)*12;
+  let finalItem = page*12;
 
   useEffect(() => {
     axios
@@ -23,6 +24,7 @@ function Movies(props) {
   
   return (
     <div id="movies">
+      <div>
       {moviesPagination.map((movie, index) => (
         <ItemMovie
           key={index}
@@ -31,6 +33,7 @@ function Movies(props) {
           description={movie.overview}
         />
       ))}
+      </div>
     </div>
   );
 }
