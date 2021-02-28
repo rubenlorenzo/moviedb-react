@@ -11,3 +11,16 @@
     color: $colorFontEssential !important;        
   }
 }
+
+.navbar-nav{
+  margin-bottom: -0.6em !important;
+  margin-left: 2em;
+  .nav-link{  
+    font-weight: bold;
+    color: $colorFontNav !important;
+  }
+  
+  .nav-link:hover{
+    color: $colorFontHover !important;
+  }
+}

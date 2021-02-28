@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { api_key } from "../../env.js";
-import ItemMovie from "./ItemMovie";
+import ItemMovie from "../ItemMovie";
 import "./Movies.scss";
 
 function Movies(props) {
