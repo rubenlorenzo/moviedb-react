@@ -3,9 +3,11 @@
 .navbar{
   background-color: $colorDarkest;
   padding: 1em;
-
-  .navbar-brand{
+  
+  .navbar-brand{    
     font-family: 'RocknRoll One';
-    color: $colorFontEssential;    
+    font-weight: bold;
+    font-size:1.8em;
+    color: $colorFontEssential !important;        
   }
 }
