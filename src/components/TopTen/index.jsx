@@ -22,6 +22,7 @@ function TopTen(p){
       {moviesPagination.map((movie, index) => (
         <ItemMovie
           key={index}
+          id={movie.id}
           image={movie.poster_path}
           title={movie.title}
           description={movie.overview}
