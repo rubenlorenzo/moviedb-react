@@ -1,0 +1,9 @@
+#movies {
+  height: calc(100vh - 176px);
+  overflow-y: scroll;
+  > div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 3%;
+  } 
+}

@@ -1,0 +1,52 @@
+@import '../../colors.scss';
+@import '../../sizes.scss';
+
+.navbar{
+  background-color: $colorDarkest;
+  padding: 1em;
+  border-bottom: $borderStandard solid $colorBorderDark;
+  
+  .navbar-brand{    
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 1.9em;
+    color: $colorFontEssential !important;        
+  }
+
+  .form-inline{
+    margin-right: 4%;
+    input{
+      background-color: $colorLightest;
+      border-radius: $borderRadiusStandard;
+      border: $borderStandard solid $colorBorderDark;
+    }
+    button{
+      background-color: $colorLight;
+      border-radius: $borderRadiusStandard;
+      border: $borderStandard solid $colorBorderDark;      
+      color: $colorFontStandard;
+    }
+    button:hover{
+      background-color: $colorDark !important;
+      color: $colorFontHover !important;
+    }
+
+    button:active{
+      background-color: $colorDarkest !important;
+      color: $colorFontHover !important;
+    }
+  }
+}
+
+.navbar-nav{
+  margin-bottom: -0.6em !important;
+  margin-left: 2em;
+  .nav-link{  
+    font-weight: bold;
+    color: $colorFontNav !important;
+  }
+  
+  .nav-link:hover{
+    color: $colorFontHover !important;
+  }  
+}
