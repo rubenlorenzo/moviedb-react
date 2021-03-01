@@ -1,6 +1,9 @@
 @import "../../colors.scss";
+@import "../../sizes.scss";
 
 .card{
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  border-radius: $borderRadiusStandard;
+  border: $borderStandard solid $colorBorderStandard;
 }

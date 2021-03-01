@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap');
 
 
 body {
-  margin: 0;
-  font-family: 'Merriweather','RocknRoll One', sans-serif;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 *{
   margin: 0;
+  font-family: 'Merriweather Sans','RocknRoll One', sans-serif;
 }
 
 code {

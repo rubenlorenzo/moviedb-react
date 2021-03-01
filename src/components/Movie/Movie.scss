@@ -1,12 +1,13 @@
 @import "../../colors.scss";
+@import "../../sizes.scss";
 
 .jumbotron {
   height: calc(100vh - 120px);
   margin-bottom: 0px !important;
 }
 .container {
-  border: 0.2px solid $colorBorderLight;
-  border-radius: 0.3em;
+  border: $borderStandard solid $colorBorderStandard;
+  border-radius: $borderRadiusStandard;
   background-color: $colorLightest;
   padding-top: 2em;
   max-width: 60% !important;
@@ -19,8 +20,8 @@
   #poster {
     margin-left: 2em;
     img {
-      border-radius: 0.3em;
-      border: 0.2px solid $colorBorderLight;
+      border-radius: $borderRadiusStandard;
+      border: $borderStandard solid $colorBorderStandard;
     }
   }
 
