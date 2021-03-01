@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <div id="content">
           <Switch>
-            <Route path="/movies/:type/:page" component={Search} exact />
+            <Route path="/movies/search/:page" component={Search} exact />
             <Route path="/movie/:movieId" component={Movie} exact />
             <Route path="/" component={TopTen} exact />
           </Switch>

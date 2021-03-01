@@ -4,7 +4,7 @@ import axios from "axios";
 import { api_key } from "../../env.js";
 import "./TopTen.scss";
 
-function TopTen(p){
+function TopTen(props){
   const [movies, setMovies] = useState([]);  
   
 

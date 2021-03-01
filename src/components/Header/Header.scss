@@ -12,6 +12,30 @@
     font-size: 1.9em;
     color: $colorFontEssential !important;        
   }
+
+  .form-inline{
+    margin-right: 4%;
+    input{
+      background-color: $colorLightest;
+      border-radius: $borderRadiusStandard;
+      border: $borderStandard solid $colorBorderDark;
+    }
+    button{
+      background-color: $colorLight;
+      border-radius: $borderRadiusStandard;
+      border: $borderStandard solid $colorBorderDark;      
+      color: $colorFontStandard;
+    }
+    button:hover{
+      background-color: $colorDark !important;
+      color: $colorFontHover !important;
+    }
+
+    button:active{
+      background-color: $colorDarkest !important;
+      color: $colorFontHover !important;
+    }
+  }
 }
 
 .navbar-nav{
@@ -24,5 +48,5 @@
   
   .nav-link:hover{
     color: $colorFontHover !important;
-  }
+  }  
 }

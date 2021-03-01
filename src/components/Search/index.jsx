@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Pagination } from "react-bootstrap";
-import Movies from "../Movies";
+import queryString from "query-string";
+import Movies from "./Movies";
 import "./Search.scss";
 
 function Content(props) {
   const [numPages, setNumPages] = useState(0);
   let pages = [];
-  let type = props.match.params.type;
+  let search = queryString.parse(props.location.search);
   let page = parseInt(props.match.params.page);
 
   for (let i = 1; i <= numPages; i++) {
     pages.push(
-      <Pagination.Item key={i} active={i === page} href={"/" + type + "/" + i}>
+      <Pagination.Item key={i} active={i === page} href={"/movies/search/" + i+"?query="+search.query}>
         {i}
       </Pagination.Item>
     );
@@ -19,7 +20,7 @@ function Content(props) {
 
   return (
     <>
-      <Movies calculatePages={calculatePages} type={type} page={page} />
+      <Movies calculatePages={calculatePages} query={search.query} page={page} />
       <Pagination>{pages}</Pagination>
     </>
   );
