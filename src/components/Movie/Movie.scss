@@ -1,0 +1,43 @@
+@import "../../colors.scss";
+
+.jumbotron {
+  height: calc(100vh - 120px);
+  margin-bottom: 0px !important;
+}
+.container {
+  border: 0.2px solid $colorBorderLight;
+  border-radius: 0.3em;
+  background-color: $colorLightest;
+  padding-top: 2em;
+  max-width: 60% !important;
+}
+
+#cover {
+  display: flex;
+  margin-bottom: 2em;
+
+  #poster {
+    margin-left: 2em;
+    img {
+      border-radius: 0.3em;
+      border: 0.2px solid $colorBorderLight;
+    }
+  }
+
+  #title {
+    padding-top: 21.2em;
+    margin-left: 3em;
+    h1 {
+      font-weight: bold;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+}
+
+#description {
+  padding: 0em 2.2em 1em 2.2em;
+
+}
