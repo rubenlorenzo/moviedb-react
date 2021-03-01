@@ -12,7 +12,11 @@ function Content(props) {
 
   for (let i = 1; i <= numPages; i++) {
     pages.push(
-      <Pagination.Item key={i} active={i === page} href={"/movies/search/" + i+"?query="+search.query}>
+      <Pagination.Item
+        key={i}
+        active={i === page}
+        href={"/movies/search/" + i + "?query=" + search.query}
+      >
         {i}
       </Pagination.Item>
     );
@@ -20,7 +24,11 @@ function Content(props) {
 
   return (
     <>
-      <Movies calculatePages={calculatePages} query={search.query} page={page} />
+      <Movies
+        calculatePages={calculatePages}
+        query={search.query}
+        page={page}
+      />
       <Pagination>{pages}</Pagination>
     </>
   );

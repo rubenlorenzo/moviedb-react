@@ -7,20 +7,23 @@ import "./Movie.scss";
 function Movie(props) {
   const movieId = props.match.params.movieId;
   const [movie, setMovie] = useState({});
+  const [genres, setGenres] = useState([]);
 
   useEffect(() => {
     axios
       .get(
         `https://api.themoviedb.org/3/movie/${movieId}?api_key=${api_key}&language=es-ES`
       )
-      .then((res) => setMovie(res.data))
+      .then((res) => {
+        setMovie(res.data);
+        setGenres(res.data.genres);
+      })
       .catch(console.error);
   }, [movieId]);
 
   return (
     <Jumbotron>
       <Container>
-        
         <div id="cover">
           <div id="poster">
             <img
@@ -37,11 +40,17 @@ function Movie(props) {
             <h4>
               {movie.original_title} - {movie.release_date}
             </h4>
+            <span>Puntuación: {movie.vote_average}</span>
+            <span>Generos:</span>
+            <ul>
+              {genres.map((genre, index) => (
+                <li key={index}>{genre.name}</li>
+              ))}
+            </ul>
           </div>
         </div>
 
         <p id="description">{movie.overview}</p>
-        
       </Container>
     </Jumbotron>
   );

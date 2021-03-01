@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Jumbotron } from "react-bootstrap";
 import axios from "axios";
 import { api_key } from "../../env.js";
 import ItemMovie from "../ItemMovie";
@@ -12,8 +13,8 @@ function Movies(props) {
   let finalItem = page * 12;
 
   useEffect(() => {
-    results();
-  }, []);
+    concatResults();
+  });
 
   useEffect(() => props.calculatePages(movies), [movies, props]);
 
@@ -35,7 +36,7 @@ function Movies(props) {
     </div>
   );
 
-  async function results() {
+  async function concatResults() {
     let response = await axios(
       `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${query}&language=es-ES&include_adult=false`
     );
